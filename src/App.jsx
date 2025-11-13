@@ -3,9 +3,9 @@ import { Routes, Route, Link } from "react-router-dom";
 import ProductPage from "./ProductPage";
 import CartPage from "./CartPage";
 import AdminLogin from "./Admin/AdminLogin";
- // 📌 صفحه لاگین
+ 
 
-// 📌 ایمپورت فایل فونت
+
 import "./font/secondary-aviny.css";
 
 export default function App() {
@@ -67,7 +67,7 @@ export default function App() {
             alignItems: "center",
           }}
         >
-          {/* ✅ ورود سمت چپ */}
+          
           <Link
             to="/login"
             style={{
@@ -82,7 +82,7 @@ export default function App() {
             ورود به حساب
           </Link>
 
-          {/* ✅ بقیه دکمه‌ها سمت راست */}
+          
           <div style={{ display: "flex", gap: 10 }}>
             <Link
               to="/"
@@ -142,13 +142,13 @@ export default function App() {
           }
         />
         <Route path="/login" element={<AdminLogin />} />
- {/* ✅ مسیر لاگین */}
+ 
       </Routes>
     </div>
   );
 }
 
-// 🛍 صفحه لیست محصولات
+
 function ProductList({ products, addToCart, cart, updateQuantity, searchTerm, setSearchTerm }) {
   if (!products.length) return <p style={{ fontFamily: "secondary-font" }}>در حال بارگذاری محصولات...</p>;
 
