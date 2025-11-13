@@ -1,4 +1,3 @@
-// HomePage.jsx
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useCartStore from "./store/CartStore.js";
@@ -31,7 +30,7 @@ export default function HomePage() {
       >
         {products.map((product) => (
           <div key={product.id} className="card">
-            {/* لینک به صفحه محصول */}
+            
             <Link to={`/product/${product.id}`} style={{ textDecoration: "none" }}>
               <img
                 src={product.image}
@@ -45,7 +44,7 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* دکمه اضافه کردن به سبد خرید */}
+            
             <button
               onClick={() => addToCart(product, 1)}
               style={{
@@ -60,19 +59,7 @@ export default function HomePage() {
               افزودن به سبد خرید
             </button>
 
-            <button
-              onClick={() => addToCart(product, 1)}
-              style={{
-                marginTop: 10,
-                padding: "10px 20px",
-                backgroundColor: "#4CAF50",
-                color: "white",
-                borderRadius: 5,
-                cursor: "pointer",
-              }}
-            >
-              افزودن به سبد خرید
-            </button>
+           
           </div>
         ))}
       </div>
@@ -80,3 +67,4 @@ export default function HomePage() {
   );
 
 }
+
