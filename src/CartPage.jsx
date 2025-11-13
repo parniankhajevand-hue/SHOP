@@ -28,7 +28,7 @@ export default function CartPage({ cart, removeFromCart, updateQuantity, clearCa
                 marginBottom: 10,
                 borderBottom: "1px dashed #ccc",
                 paddingBottom: 8,
-                fontFamily: "secondary-font", // ✅ فونت روی هر آیتم
+                fontFamily: "secondary-font", // 
               }}
             >
               <div
@@ -140,3 +140,4 @@ export default function CartPage({ cart, removeFromCart, updateQuantity, clearCa
     </div>
   );
 }
+
