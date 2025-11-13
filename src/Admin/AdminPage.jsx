@@ -6,7 +6,7 @@ export default function AdminPage() {
 
   const handleDelete = async (index) => {
     try {
-      // فرضی ارسال DELETE به API
+    
       const response = await fetch(`https://your-api.com/products/${index}`, {
         method: "DELETE",
       });
@@ -40,3 +40,4 @@ export default function AdminPage() {
     </div>
   );
 }
+
